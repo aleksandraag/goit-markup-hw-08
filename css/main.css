@@ -152,6 +152,7 @@ img {
           justify-content: center;
   gap: 8px;
   margin: 8px 0;
+  padding: 0;
 }
 
 .contact__link {
@@ -184,6 +185,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  padding: 0;
 }
 
 .banner {
