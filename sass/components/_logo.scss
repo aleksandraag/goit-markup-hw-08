@@ -2,15 +2,16 @@
 
 @import "../utils/variables";
 
+//MOBILE
+
 .logo {
   font-family: $secondary-font;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.9375em;
   letter-spacing: 0.03em;
   color: $button-backgroundnhover-color;
-
 
 &--header > span {
   color: $menu-text-color;
@@ -20,3 +21,22 @@
   color: $button-text-color;
 }
 }
+
+// .logo {
+//   font-family: $secondary-font;
+//   text-decoration: none;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.9375em;
+//   letter-spacing: 0.03em;
+//   color: $button-backgroundnhover-color;
+
+
+// &--header > span {
+//   color: $menu-text-color;
+// }
+
+// &--footer > span {
+//   color: $button-text-color;
+// }
+// }

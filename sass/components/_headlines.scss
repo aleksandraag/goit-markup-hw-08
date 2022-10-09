@@ -1,14 +1,36 @@
 @import "../utils/variables";
 
+//MOBILE
+
 .headline-h2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  margin-top: 0;
-  padding-top: 0;
+  line-height: 33px;
+  margin-bottom: 30px;
+ padding-top: 60px;
+
+  &--work {
+    display: none;
+  }
 }
+
+
+
+// .headline-h2 {
+//   font-weight: 700;
+//   font-size: 36px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-bottom: 50px;
+//   margin-top: 0;
+//   padding-top: 0;
+
+//   &--work {
+//     display: none;
+//   }
+// }
 
 .headline-h3 {
   font-weight: 700;
@@ -48,6 +70,7 @@
     margin-bottom: 10px;
     padding: 0;
     color: $main-text-color;
+    text-align: center;
   }
 
   &--footer {

@@ -1,5 +1,20 @@
 @import "../utils/variables";
 
+//MOBILE
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  margin: auto;
+}
+
+.header-bottomline {
+  border-bottom: 1px solid $headline-bottom-line;
+}
+
+
 // .header-container {
 //   display: flex;
 //   flex-direction: row;

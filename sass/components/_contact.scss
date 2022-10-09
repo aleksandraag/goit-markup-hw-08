@@ -5,6 +5,7 @@
 .contact {
   list-style: none;
   display: flex;
+  visibility: hidden;
 
   &__icon {
     margin-right: 10px;
