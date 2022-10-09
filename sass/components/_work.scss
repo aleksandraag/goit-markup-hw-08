@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.work {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+.work__img {
+  position: relative;
+  z-index: 1;
+
+  & > .work__label {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    color: $button-text-color;
+    position: absolute;
+    top: 226px;
+    margin: 0;
+    background: rgba(47, 48, 58, 0.8);
+    z-index: 2;
+  }
+
+  & > .work__label--1 {
+    padding: 27px 90px;
+  }
+
+  & > .work__label--2 {
+    padding: 27px 113px;
+    white-space: nowrap;
+  }
+
+  & > .work__label--3 {
+    padding: 27px 94px;
+  }
+}

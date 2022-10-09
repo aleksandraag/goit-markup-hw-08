@@ -1,0 +1,57 @@
+@import "../utils/variables";
+
+.headline-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.headline-h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.25em;
+  letter-spacing: 0.06em;
+  color: $main-text-color;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-bottom: 4px;
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.headline-h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: $main-text-color;
+}
+
+.headline-h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+
+  &--lorem {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    color: $main-text-color;
+  }
+
+  &--footer {
+    color: $button-text-color;
+    margin-bottom: 20px;
+  }
+}

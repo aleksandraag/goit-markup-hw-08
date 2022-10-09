@@ -1,0 +1,59 @@
+// CONTACT header + footer + bottomline
+
+@import "../utils/variables";
+
+.contact {
+  list-style: none;
+  display: flex;
+
+  &__icon {
+    margin-right: 10px;
+    color: $contactncontent-text-color;
+    fill: $contactncontent-text-color;
+    transition: fill 250ms $transition-fn;
+  }
+
+  &--header {
+    gap: 50px;
+    margin-left: auto;
+  }
+
+  &--footer {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 9px;
+    margin: 9px 0;
+    padding: 0;
+  }
+}
+
+.contact__link {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 250ms $transition-fn;
+
+  &:hover,
+  &:focus {
+    color: $button-backgroundnhover-color;
+  }
+
+  &--header:hover .contact__icon,
+  &--header:focus .contact__icon {
+    color: $button-backgroundnhover-color;
+    fill: $button-backgroundnhover-color;
+  }
+
+  &--header {
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 0.02em;
+    color: $contactncontent-text-color;
+  }
+
+  &--footer {
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+    color: $footer-text-color;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 46px;
+  margin-left: 93px;
+}
+  .nav__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    margin-left: auto;
+    transition: color 250ms $transition-fn;
+  
+
+  &:hover,
+  &:focus {
+    color: $button-backgroundnhover-color;
+  }
+
+  &--active::after {
+    position: relative;
+    content: "";
+    display: block;
+    border-bottom: solid 4px $button-backgroundnhover-color;
+    width: 53px;
+    height: 4px;
+    top: 30px;
+    border-radius: 2px;
+  }
+}

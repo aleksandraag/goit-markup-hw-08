@@ -1,0 +1,79 @@
+@import "../utils/variables";
+
+.button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: $button-backgroundnhover-color;
+  color: $button-text-color;
+  transition: background-color 250ms $transition-fn, color 250ms $transition-fn,
+    box-shadow 250ms $transition-fn;
+
+  &:hover,
+  &:focus {
+    background-color: $button-backgroundnhover-color;
+    color: $button-text-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &--categories {
+    font-weight: 500;
+    line-height: 1.625em;
+    background-color: $alternative-button-background-color;
+    color: $main-text-color;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+  }
+
+  &--banner {
+    font-weight: 700;
+    line-height: 1.875em;
+    letter-spacing: 0.06em;
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 200px;
+  }
+
+  &--modal {
+    width: 200px;
+    height: 50px;
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    margin-left: 164px;
+    margin-right: 164px;
+    margin-bottom: 40px;
+  }
+
+  &--modal-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    top: 8px;
+    right: 8px;
+    background-color: $button-text-color;
+    color: $main-text-color;
+    border: 1px solid $icons-color;
+    border-radius: 50%;
+  }
+
+  &--newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    gap: 24px;
+  }
+}

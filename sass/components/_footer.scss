@@ -1,0 +1,24 @@
+@import "../utils/variables";
+
+.footer {
+  background-color: $mainheadline-footer-color;
+  padding: 60px 0;
+
+&__container {
+  display: flex;
+  align-items: baseline;
+}
+
+&__info {
+  margin-right: 70px;
+}
+
+&__address {
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: $button-text-color;
+  white-space: nowrap;
+}
+}
