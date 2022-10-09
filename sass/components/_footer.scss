@@ -1,5 +1,34 @@
 @import "../utils/variables";
 
+.footer {
+  background-color: $mainheadline-footer-color;
+  padding: 60px 0;
+  
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+//   &__info {
+       
+//   }
+
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    color: $button-text-color;
+    white-space: nowrap;
+  }
+}
+
 // .footer {
 //   background-color: $mainheadline-footer-color;
 //   padding: 60px 0;

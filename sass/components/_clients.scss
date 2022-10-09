@@ -10,6 +10,8 @@ flex-wrap: wrap;
   flex-basis: calc((100% - 120px) / 4);
  justify-content: center;
  max-width: 480px;
+ padding: 0 15px;
+ margin-bottom: 60px;
 }
 
 .clients__link {
@@ -22,6 +24,7 @@ flex-wrap: wrap;
   width: 170px;
   height: 92px;
   transition: border-color 250ms $transition-fn, fill 250ms $transition-fn;
+  max-width: 480px;
 
   &:hover,
   &:focus-within {
