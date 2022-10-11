@@ -1,17 +1,16 @@
 @import "../utils/variables";
 
-
 .clients {
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
-  flex-basis: calc((100% - 120px) / 4);
- justify-content: center;
- max-width: 480px;
- padding: 0 15px;
- margin-bottom: 60px;
+  flex-basis: calc((100% - 30px) / 2);
+  justify-content: center;
+  max-width: 480px;
+  padding: 0 15px;
+  margin-bottom: 60px;
 }
 
 .clients__link {
@@ -32,7 +31,6 @@ flex-wrap: wrap;
     border-color: $button-backgroundnhover-color;
   }
 }
-
 
 // .clients {
 //   list-style: none;
