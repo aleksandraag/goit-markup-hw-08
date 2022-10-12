@@ -24,8 +24,8 @@
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $button-text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,12 +41,11 @@
   &__header {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.4375em;
+    line-height: 1.875em;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-text-color;
-    margin-top: 40px;
-    margin-bottom: 12px;
+    margin: 40px 40px 12px;
   }
 
   &__label {
@@ -75,7 +74,7 @@
   &__input {
     position: relative;
     outline: none;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -86,8 +85,8 @@
   &__comment {
     resize: none;
     outline: none;
-    width: 448px;
-    height: 138px;
+    width: 370px;
+    height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
@@ -101,7 +100,7 @@
   &__icon {
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 12%;
     align-items: center;
     justify-content: center;
     fill: $main-text-color;
@@ -111,10 +110,10 @@
 .checkbox {
   position: relative;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 20px;
-  margin-left: 55px;
-  margin-right: 54px;
+  margin-left: 50px;
+  margin-right: 40px;
   margin-bottom: 0;
   color: $contactncontent-text-color;
 
@@ -142,12 +141,166 @@
 
 .checkbox__terms {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5em;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 
   &--link {
     color: $button-backgroundnhover-color;
     text-decoration: underline;
   }
 }
+
+
+// .backdrop {
+//   display: flex;
+//   position: fixed;
+//   background-size: cover;
+//   width: 100%;
+//   height: 100%;
+//   left: 0px;
+//   top: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: rgba(0, 0, 0, 0.2);
+//   transition: visibility 250ms $transition-fn, opacity 250ms $transition-fn;
+//   z-index: 3;
+// }
+
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+//   transition: visibility 250ms linear, opacity 250ms linear;
+// }
+
+// .modal {
+//   position: relative;
+//   width: 528px;
+//   height: 581px;
+//   background-color: $button-text-color;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   margin: auto;
+//   transition: transform 250ms $transition-fn;
+
+//   &__form {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   &__header {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.4375em;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $main-text-color;
+//     margin-top: 40px;
+//     margin-bottom: 12px;
+//   }
+
+//   &__label {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4px;
+//     padding-left: 40px;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 0.875em;
+//     letter-spacing: 0.01em;
+//     color: $contactncontent-text-color;
+//   }
+
+//   &__label:focus-within > &__input {
+//     border-color: $button-backgroundnhover-color;
+//     transition: border-color 250ms $transition-fn;
+//   }
+
+//   &__label:focus-within > &__icon {
+//     fill: $button-backgroundnhover-color;
+//     transition: fill 250ms $transition-fn;
+//   }
+
+//   &__input {
+//     position: relative;
+//     outline: none;
+//     width: 448px;
+//     height: 40px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     padding-left: 42px;
+//     margin-bottom: 10px;
+//   }
+
+//   &__comment {
+//     resize: none;
+//     outline: none;
+//     width: 448px;
+//     height: 138px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     padding: 12px 16px;
+//   }
+
+//   &__comment:focus {
+//     border-color: $button-backgroundnhover-color;
+//     transition: border-color 250ms $transition-fn;
+//   }
+
+//   &__icon {
+//     position: absolute;
+//     top: 40%;
+//     left: 10%;
+//     align-items: center;
+//     justify-content: center;
+//     fill: $main-text-color;
+//   }
+// }
+
+// .checkbox {
+//   position: relative;
+//   font-weight: 400;
+//   font-size: 14px;
+//   margin-top: 20px;
+//   margin-left: 55px;
+//   margin-right: 54px;
+//   margin-bottom: 0;
+//   color: $contactncontent-text-color;
+
+//   &__input {
+//     position: relative;
+//     opacity: 0;
+//   }
+
+//   &__icon {
+//     position: absolute;
+//     fill: $button-text-color;
+//     top: 10%;
+//     right: 97%;
+//     border: 1px solid $main-text-color;
+//   }
+
+//   input:checked + &__icon {
+//     fill: $button-backgroundnhover-color;
+//     border-color: $button-backgroundnhover-color;
+//     border-radius: 2px;
+//     transition: border-color 250ms $transition-fn;
+//     transition: fill 250ms $transition-fn;
+//   }
+// }
+
+// .checkbox__terms {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.5em;
+//   letter-spacing: 0.03em;
+
+//   &--link {
+//     color: $button-backgroundnhover-color;
+//     text-decoration: underline;
+//   }
+// }
