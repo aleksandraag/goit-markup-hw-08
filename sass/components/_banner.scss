@@ -2,12 +2,11 @@
 
 //MOBILE
 
-
 .banner {
   background-color: $mainheadline-footer-color;
   background-image: linear-gradient($gradient, $gradient),
     url(../images/img-background-mobile@1x.jpg);
-    background-size: 100%;
+  background-size: 100%;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -20,11 +19,8 @@
   max-width: 480px;
   align-items: center;
   padding: 118px 0;
- 
 
-  
-
-    &__title {
+  &__title {
     font-weight: 900;
     font-size: 26px;
     line-height: 42px;
@@ -32,14 +28,20 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $button-text-color;
-    
-  
   }
 
   &__button {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    background-image: linear-gradient($gradient, $gradient),
+      url(../images/img-background-tablet@1x.jpg);
+    min-width: 768px;
   }
 }
 

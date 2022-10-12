@@ -68,6 +68,27 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    &__icon {
+      margin-right: 10px;
+      color: $contactncontent-text-color;
+      fill: $contactncontent-text-color;
+      transition: fill 250ms $transition-fn;
+    }
+
+    &--header {
+      gap: 50px;
+      margin-left: auto;
+    }
+  }
+}
+
 // .contact {
 //   list-style: none;
 //   display: flex;
