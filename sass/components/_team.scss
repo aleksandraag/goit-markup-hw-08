@@ -47,13 +47,22 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     min-width: 768px;
+&__list {
+   min-width: 768px;
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    }
 
     &__item {
       display: flex;
+      margin: 0 auto;
       flex-basis: calc((100% - 30px) / 2);
       flex-wrap: wrap;
       width: 100%;
     }
+   
   }
 }
 

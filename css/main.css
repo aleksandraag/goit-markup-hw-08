@@ -266,6 +266,14 @@ img {
     min-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-background@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background@1x.jpg);
+    min-width: 1200px;
+    max-width: 1600px;
+  }
+}
 .button {
   text-align: center;
   border: none;
@@ -526,10 +534,23 @@ img {
   .team {
     min-width: 768px;
   }
+  .team__list {
+    min-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
   .team__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     -ms-flex-wrap: wrap;
