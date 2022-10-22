@@ -23,6 +23,7 @@
     color: $button-backgroundnhover-color;
   }
 
+
   &--active::after {
     position: relative;
     content: "";
@@ -35,27 +36,35 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px)
+ {
   .nav {
   display: flex;
   list-style: none;
   margin: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
   width: 100%;
+  padding: 32px 0;
+  transition: color 250ms $transition-fn;
 }
 
+.nav__link {
+  margin: 0;
+  
+   &:hover,
+  &:focus {
+    color: $button-backgroundnhover-color;
+  }
 
-  .nav__link--active::after {
+  &--active::after {
     position: relative;
     content: "";
     display: block;
     border-bottom: solid 4px $button-backgroundnhover-color;
     width: 53px;
     height: 4px;
-    top: 30px;
+    top: 22px;
     border-radius: 2px;
   }
 
-
+}
 }

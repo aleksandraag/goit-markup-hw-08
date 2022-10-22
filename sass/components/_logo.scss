@@ -16,19 +16,19 @@
 &--header > span {
   color: $menu-text-color;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 &--footer > span {
   color: $button-text-color;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
 }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
+
 }
 
 // .logo {

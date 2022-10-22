@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-&-bottomline {
+.header-bottomline {
   border-bottom: 1px solid $headline-bottom-line;
 }
 
@@ -23,12 +23,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 auto;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   justify-content: space-between;
   width: 100%;
 }
 
-&-bottomline {
+.header-bottomline {
   border-bottom: 1px solid $headline-bottom-line;
   width: 100%;
 }
