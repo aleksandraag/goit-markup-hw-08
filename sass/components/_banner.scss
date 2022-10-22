@@ -23,7 +23,7 @@
   &__title {
     font-weight: 900;
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.36em;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -50,32 +50,14 @@
       url(../images/img-background@1x.jpg);
     min-width: 1200px;
     max-width: 1600px;
+  max-height: 600px;
+
+    &__title {
+    font-size: 44px;
+    line-height: 1.36em;   
+  }
   }
 }
 
-// .banner {
-//   background-color: $mainheadline-footer-color;
-//   background-image: linear-gradient($gradient, $gradient),
-//     url(../images/img-background@1x.jpg);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 0 auto;
-//   padding: 0;
-//   width: 100%;
-//   max-width: 1600px;
 
-//   &__title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36em;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: $button-text-color;
-//     padding-top: 200px;
-//     padding-left: 252px;
-//     padding-right: 252px;
-//   }
-// }
+

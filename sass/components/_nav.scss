@@ -5,6 +5,7 @@
   list-style: none;
   gap: 46px;
   margin-left: 93px;
+  width: 100%;
   display: none;
 }
   .nav__link {
@@ -62,9 +63,28 @@
     border-bottom: solid 4px $button-backgroundnhover-color;
     width: 53px;
     height: 4px;
-    top: 22px;
+    top: 30px;
     border-radius: 2px;
   }
 
 }
+}
+
+@media screen and (min-width: 1200px) {
+
+   .nav {
+  display: flex;
+  margin: 0;
+  padding: 32px 0;
+  transition: color 250ms $transition-fn;
+}
+
+.nav__link {
+  margin: 0;
+  
+   &:hover,
+  &:focus {
+    color: $button-backgroundnhover-color;
+  }
+  }
 }
