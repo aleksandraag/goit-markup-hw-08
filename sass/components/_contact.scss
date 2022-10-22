@@ -7,6 +7,8 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  padding: 0;
+ 
 
   &__icon {
     margin-right: 10px;
@@ -19,6 +21,7 @@
     gap: 50px;
     margin-left: auto;
     display: none;
+    padding: 0;
   }
 
   &--footer {
@@ -37,8 +40,7 @@
     flex-direction: column;
     text-align: justify;
     justify-content: flex-start;
-    margin: 0;
-    padding: 0;
+   
 
     &__icon {
       color: $contactncontent-text-color;
@@ -96,22 +98,20 @@
 
 @media screen and (min-width: 1200px) {
   .contact {
-    list-style: none;
+     max-width: 1600px;
+  width: 100%;
     display: flex;
+    justify-content: flex-end;
+   
 
-    text-align: center;
-    justify-content: center;
 
     &__icon {
-      margin-right: 10px;
       color: $contactncontent-text-color;
       fill: $contactncontent-text-color;
       transition: fill 250ms $transition-fn;
     }
 
-    &--header {
-      padding: 0;
-    }
+   
 
     &--footer {
       flex-direction: column;
@@ -122,28 +122,11 @@
     }
   }
 
+
   .contact__link {
     text-decoration: none;
     font-size: 14px;
     transition: color 250ms $transition-fn;
-
-    &:hover,
-    &:focus {
-      color: $button-backgroundnhover-color;
-    }
-
-    &--header:hover .contact__icon,
-    &--header:focus .contact__icon {
-      color: $button-backgroundnhover-color;
-      fill: $button-backgroundnhover-color;
-    }
-
-    &--header {
-      font-weight: 500;
-      line-height: 1px;
-      letter-spacing: 0.02em;
-      color: $contactncontent-text-color;
-    }
 
     &--footer {
       font-weight: 400;
