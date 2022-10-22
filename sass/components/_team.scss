@@ -6,16 +6,20 @@
   background-color: $alternative-button-background-color;
   width: 100%;
   padding-bottom: 30px;
+  max-width: 1600px;
+  margin: auto;
 
   &__list {
     align-items: center;
     gap: 30px;
+    width: 100%;
   }
 
   &__item {
-    margin: 0 auto;
     background-color: $button-text-color;
     margin-bottom: 30px;
+    width: 100%;
+    
   }
 
   &__img {
@@ -23,13 +27,13 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   &__member {
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
   }
 
   &__job {
@@ -38,7 +42,7 @@
     line-height: 1.1875em;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 16px;
     color: $contactncontent-text-color;
   }
@@ -46,22 +50,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
-    min-width: 768px;
-&__list {
-    display: flex;  
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;  
     }
 
     &__item {
       display: flex;
-      margin: 0 auto;
       flex-basis: calc((100% - 30px) / 2);
-      flex-wrap: wrap;
-      width: 100%;
+      flex-wrap: wrap;   
     }
-   
   }
 }
 

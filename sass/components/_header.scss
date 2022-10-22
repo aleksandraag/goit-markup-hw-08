@@ -9,6 +9,8 @@
   height: 60px;
   margin: auto;
   gap: 100px;
+  max-width: 1600px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -18,12 +20,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .header-container {
-  min-width: 768px;
-  max-width: 1199px;
-  margin: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-  width: 100%;
+ 
 }
 
 .header-bottomline {

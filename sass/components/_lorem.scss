@@ -6,12 +6,16 @@
   list-style: none;
   gap: 30px;
   padding-bottom: 30px;
+  max-width: 1600px;
+    width: 100%;
+    margin: auto;
 
   &__icon {
     width: 70px;
     padding: 25px 0;
     background-color: $alternative-button-background-color;
     text-align: center;
+    max-width: 1600px;
     width: 100%;
   }
 
