@@ -34,3 +34,28 @@
     border-radius: 2px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+
+  .nav__link--active::after {
+    position: relative;
+    content: "";
+    display: block;
+    border-bottom: solid 4px $button-backgroundnhover-color;
+    width: 53px;
+    height: 4px;
+    top: 30px;
+    border-radius: 2px;
+  }
+
+
+}

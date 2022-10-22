@@ -39,6 +39,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    margin: 0;
 
     &__icon {
       margin-right: 10px;
@@ -51,6 +52,7 @@
     &--header {
       gap: 50px;
       margin-left: auto;
+      margin: 0;
     }
   }
 }
@@ -76,6 +78,7 @@
     line-height: 1px;
     letter-spacing: 0.02em;
     color: $contactncontent-text-color;
+    margin: 0;
   }
 
   &--footer {
