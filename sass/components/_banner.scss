@@ -42,7 +42,8 @@
     background-image: linear-gradient($gradient, $gradient),
       url(../images/img-background-tablet@1x.jpg);
     min-width: 768px;
-    margin: 0;
+    max-width: 1199px;
+   
   }
 }
 
