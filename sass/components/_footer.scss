@@ -3,7 +3,6 @@
 .footer {
   background-color: $mainheadline-footer-color;
   padding: 60px 0;
-  
 
   &__container {
     display: flex;
@@ -14,9 +13,9 @@
     margin: 0 auto;
   }
 
-//   &__info {
-       
-//   }
+  //   &__info {
+
+  //   }
 
   &__address {
     font-style: normal;
@@ -30,13 +29,29 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   .footer__container {
+  .footer__container {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .footer__info {
+    padding-left: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__address {
+    padding-bottom: 8px;
+  }
+
+  .footer__socials {
+    padding-right: 89px;
   }
 }
 
