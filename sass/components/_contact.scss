@@ -38,11 +38,12 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    text-align: justify;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
 
     &__icon {
-      margin-right: 10px;
       color: $contactncontent-text-color;
       fill: $contactncontent-text-color;
       transition-property: fill;
@@ -51,13 +52,15 @@
 
     &--header {
       margin: 0;
+      gap: 0;
+
     }
   }
 }
 
 .contact__link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   transition: color 250ms $transition-fn;
   padding: 0;
   margin: 0;

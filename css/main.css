@@ -78,26 +78,14 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-container {
     min-width: 768px;
-    max-width: 1199px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 100%;
   }
   .header-bottomline {
+    min-width: 768px;
+    margin: 0;
     border-bottom: 1px solid #ececec;
     width: 100%;
   }
@@ -235,11 +223,14 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: justify;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 0;
     padding: 0;
   }
   .contact__icon {
-    margin-right: 10px;
     color: #757575;
     fill: #757575;
     -webkit-transition-property: fill;
@@ -249,11 +240,12 @@ img {
   }
   .contact--header {
     margin: 0;
+    gap: 0;
   }
 }
 .contact__link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
@@ -501,6 +493,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+    margin-top: 60px;
   }
   .lorem__item {
     display: -webkit-box;
