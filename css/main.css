@@ -6,7 +6,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 320px;
-  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -361,7 +360,7 @@ img {
   padding: 118px 0;
   background-position: center;
   background-size: cover;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -396,7 +395,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background@1x.jpg);
     max-width: 1600px;
     padding: 200px 0;
-    margin: 0;
+    margin: 0 auto;
   }
   .banner__title {
     font-size: 44px;
@@ -578,6 +577,9 @@ img {
   text-align: center;
   max-width: 1600px;
   width: 100%;
+  margin: auto;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 .lorem__text {
   font-weight: 400;
@@ -590,46 +592,38 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .lorem {
-    min-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
-    margin-top: 60px;
+    max-width: 100%;
   }
   .lorem__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .lorem {
-    max-width: 1600px;
-    width: 100%;
-    margin: auto;
-    list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
     gap: 30px;
-    padding-bottom: 0;
+    max-width: 1600px;
   }
   .lorem__icon {
-    max-width: 1600px;
-    width: 100%;
-    margin: auto;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    padding: 25px 100px;
+    max-width: 270px;
+  }
+  .lorem__text {
+    max-width: 100%;
   }
 }
 .work {
@@ -682,9 +676,8 @@ img {
 }
 .team {
   background-color: #f5f4fa;
-  width: 100%;
+  max-width: 100%;
   padding-bottom: 30px;
-  max-width: 1600px;
   margin: auto;
 }
 .team__list {
@@ -754,7 +747,8 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    gap: 30px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 /* SOCIALS team & footer */
@@ -991,6 +985,14 @@ img {
     min-width: 768px;
     padding: 0 15px;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    gap: 30px;
   }
 }
 .footer {

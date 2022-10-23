@@ -4,9 +4,8 @@
 
 .team {
   background-color: $alternative-button-background-color;
-  width: 100%;
+  max-width: 100%;
   padding-bottom: 30px;
-  max-width: 1600px;
   margin: auto;
 
   &__list {
@@ -69,7 +68,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 30px;
+  margin: 0 auto;
+  width: 100%;
+  
 }
 
 }
