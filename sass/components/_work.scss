@@ -1,13 +1,17 @@
 @import "../utils/variables";
 
 .work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   gap: 30px;
-  display: none;
 }
 .work__img {
   position: relative;
@@ -40,4 +44,5 @@
   & > .work__label--3 {
     padding: 27px 94px;
   }
+}
 }

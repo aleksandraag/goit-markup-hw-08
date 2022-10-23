@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   line-height: 33px;
   margin-bottom: 30px;
- padding-top: 60px;
+  padding-top: 60px;
 
   &--work {
     display: none;
@@ -35,24 +35,8 @@
     color: $button-text-color;
     margin-top: 60px;
     margin-bottom: 0;
-   
   }
 }
-
-
-// .headline-h2 {
-//   font-weight: 700;
-//   font-size: 36px;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   margin-bottom: 50px;
-//   margin-top: 0;
-//   padding-top: 0;
-
-//   &--work {
-//     display: none;
-//   }
-// }
 
 .headline-h3 {
   font-weight: 700;
@@ -80,23 +64,39 @@
   color: $main-text-color;
 }
 
-// .headline-h5 {
-//   text-transform: uppercase;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1em;
-//   letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .headline-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 0;
 
-//   &--lorem {
-//     margin-top: 30px;
-//     margin-bottom: 10px;
-//     padding: 0;
-//     color: $main-text-color;
-//     text-align: center;
-//   }
+    &--work {
+      display: block;
+    }
+  }
 
-//   &--footer {
-//     color: $button-text-color;
-//     margin-bottom: 20px;
-//   }
-// }
+  .headline-h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+
+    &--lorem {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 0;
+      color: $main-text-color;
+      text-align: center;
+    }
+
+    &--footer {
+      color: $button-text-color;
+      margin-bottom: 20px;
+    }
+  }
+}

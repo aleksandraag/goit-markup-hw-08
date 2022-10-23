@@ -13,6 +13,7 @@ img {
   height: auto;
 }
 
+
 // Container for header, body and footer
 
 //MOBILE 480
@@ -44,16 +45,10 @@ img {
     margin: 0 auto;
     align-items: center;
   }
+
+  .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 }
 
-//DESKTOP
-// .container {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-// }
-
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
