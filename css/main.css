@@ -48,6 +48,7 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
     -webkit-box-align: center;
@@ -1065,6 +1066,34 @@ img {
     padding-right: 89px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+  }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    max-width: 1200px;
+    gap: 60px;
+    margin: 0 auto;
+  }
+}
 .backdrop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,4 +1330,19 @@ input:checked + .checkbox__icon {
   line-height: 1.875em;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-left: auto;
+  }
+  .newsletter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -42,12 +42,19 @@
   }
 }
 
-// .newsletter {
-//   margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .newsletter {
+  margin-left: auto;
 
-// &__form {
-//   display: flex;
-// }
+&__form {
+  display: flex;
+  flex-direction: row;
+}
+
+}
+}
+
+
 
 // &__mail {
 //   margin-right: 12px;

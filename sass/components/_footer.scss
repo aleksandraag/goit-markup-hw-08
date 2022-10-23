@@ -13,9 +13,7 @@
     margin: 0 auto;
   }
 
-  //   &__info {
-
-  //   }
+ 
 
   &__address {
     font-style: normal;
@@ -53,6 +51,30 @@
 
   .footer__socials {
     padding-right: 89px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    margin: 0 auto;
+    
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      max-width: 1200px;
+       gap: 60px;
+       margin: 0 auto;
+    }
+
+  
+
   }
 }
 
