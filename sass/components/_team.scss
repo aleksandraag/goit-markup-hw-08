@@ -63,6 +63,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+ .team__item {
+  margin-bottom: 64px;
+ 
+ }
+
 .team__list {
   list-style: none;
   display: flex;

@@ -44,7 +44,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -71,7 +71,7 @@ img {
   height: 80px;
   margin: auto;
   gap: 100px;
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -313,7 +313,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contact {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,7 +408,7 @@ img {
   .banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-background@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background@1x.jpg);
-    max-width: 1600px;
+    max-width: 1200px;
     padding: 200px 0;
     margin: auto;
     width: 100%;
@@ -609,7 +609,7 @@ img {
   list-style: none;
   gap: 30px;
   padding-bottom: 30px;
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
@@ -618,7 +618,7 @@ img {
   padding: 25px 0;
   background-color: #f5f4fa;
   text-align: center;
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
   -ms-flex-preferred-size: 100%;
@@ -779,6 +779,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team__item {
+    margin-bottom: 64px;
+  }
   .team__list {
     list-style: none;
     display: -webkit-box;
@@ -1032,7 +1035,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
     gap: 30px;
