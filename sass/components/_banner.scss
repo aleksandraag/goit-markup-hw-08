@@ -6,7 +6,8 @@
   background-color: $mainheadline-footer-color;
   background-image: linear-gradient($gradient, $gradient),
     url(../images/img-background-mobile@1x.jpg);
-  max-width: 100%;
+    min-width: 320px;
+  width: 100%;
   padding: 118px 0;
   background-position: center;
   background-size: cover;

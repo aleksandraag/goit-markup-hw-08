@@ -12,6 +12,11 @@
   max-width: 1200px;
   width: 100%;
   justify-content: space-between;
+
+}
+
+.header__nav {
+  display: none;
 }
 
 .header-bottomline {
@@ -22,6 +27,10 @@
   .header-container {
     margin: auto;
   }
+
+  .header__nav {
+  display: block;
+}
 
   .header-bottomline {
     min-width: 768px;
@@ -38,6 +47,9 @@
   flex-direction: row;
   align-items: center;
   margin: auto;
+}
+  .header__nav {
+  display: block;
 }
 }
 

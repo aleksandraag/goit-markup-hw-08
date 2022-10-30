@@ -12,12 +12,15 @@
     align-items: center;
     gap: 30px;
     width: 100%;
+    padding: 0;
   }
 
   &__item {
     background-color: $button-text-color;
-    margin-bottom: 30px;
     width: 100%;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
     
   }
 
