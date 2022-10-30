@@ -175,6 +175,27 @@
       padding: 12px 16px;
     }
   }
+
+  .checkbox {
+
+  margin-left: 79px;
+  margin-right: 54px;
+
+  &__terms {
+  font-size: 14px;
+}
+
+&__icon {
+    top: 10%;
+    right: 102%;
+   }
+
+   &__input {
+   display: none;
+  }
+}
+
+
 }
 
 // .backdrop {

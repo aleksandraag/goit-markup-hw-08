@@ -485,7 +485,7 @@ img {
   right: 8px;
   background-color: white;
   color: #212121;
-  border: 1px solid #afb1b8;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 .button--newsletter {
@@ -522,6 +522,18 @@ img {
     gap: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .button--modal {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #2196f3;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    margin-left: 164px;
+    margin-right: 164px;
+    margin-bottom: 40px;
   }
 }
 .headline-h2 {
@@ -1333,6 +1345,20 @@ input:checked + .checkbox__icon {
     width: 448px;
     height: 138px;
     padding: 12px 16px;
+  }
+  .checkbox {
+    margin-left: 79px;
+    margin-right: 54px;
+  }
+  .checkbox__terms {
+    font-size: 14px;
+  }
+  .checkbox__icon {
+    top: 10%;
+    right: 102%;
+  }
+  .checkbox__input {
+    display: none;
   }
 }
 .newsletter {
