@@ -32,6 +32,10 @@
   font-size: 26px;
   text-align: left;
 
+&--footer {
+  display: block;
+}
+
   &--footer > span {
   color: $button-text-color;
   text-align: left;

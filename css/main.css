@@ -136,6 +136,9 @@ img {
     font-size: 26px;
     text-align: left;
   }
+  .logo--footer {
+    display: block;
+  }
   .logo--footer > span {
     color: white;
     text-align: left;
@@ -1334,7 +1337,6 @@ input:checked + .checkbox__icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 480px;
   width: 100%;
 }
 .newsletter__form {
@@ -1379,7 +1381,7 @@ input:checked + .checkbox__icon {
 
 @media screen and (min-width: 1200px) {
   .newsletter {
-    margin-left: auto;
+    margin-left: 20px;
   }
   .newsletter__form {
     display: -webkit-box;
@@ -1392,6 +1394,9 @@ input:checked + .checkbox__icon {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .newsletter__label {
+    display: none;
   }
   .newsletter__textbutton {
     font-weight: 700;
