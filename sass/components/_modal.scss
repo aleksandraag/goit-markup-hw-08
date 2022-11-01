@@ -37,7 +37,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    max-width: 528px;
+    max-width: 450px;
     width: 100%;
   }
 
@@ -117,17 +117,15 @@
 
 .checkbox {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 40px;
   margin-bottom: 0;
+  max-width: 450px;
+  width: 100%;
   color: $contactncontent-text-color;
-
- 
 
   &__icon {
     position: absolute;
@@ -138,8 +136,8 @@
   }
 
   &__input {
-      display: none;
-    }
+    display: none;
+  }
 
   input:checked + &__icon {
     fill: $button-backgroundnhover-color;
@@ -155,14 +153,22 @@
   font-size: 12px;
   line-height: 1.5em;
   letter-spacing: 0.03em;
-  white-space: nowrap;
+  margin: 0 auto;
+  width: 100%;
 
   &--link {
     color: $button-backgroundnhover-color;
     text-decoration: underline;
   }
-}
 
+  &__icon {
+    position: absolute;
+    fill: $button-text-color;
+    top: 10%;
+    right: 97%;
+    border: 1px solid $main-text-color;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .modal {

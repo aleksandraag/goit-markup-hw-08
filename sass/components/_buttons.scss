@@ -10,57 +10,53 @@
   transition: background-color 250ms $transition-fn, color 250ms $transition-fn,
     box-shadow 250ms $transition-fn;
 
-    &:hover,
-&:focus {
-  background-color: $button-backgroundnhover-color;
-  color: $button-text-color;
-  cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-  &--banner {
-     font-weight: 700;
-  line-height: 1.875em;
-  letter-spacing: 0.06em;
-  color: $button-text-color;
-  background-color: $button-backgroundnhover-color;
-  width: 200px;
-  height: 50px;
-  padding: 10px 41px;
- 
-  
+  &:hover,
+  &:focus {
+    background-color: $button-backgroundnhover-color;
+    color: $button-text-color;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
-     &--modal {
-  width: 200px;
-  height: 50px;
-  color: $button-text-color;
-  background-color: $button-backgroundnhover-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
-  margin: 30px 125px 40px;
+  &--banner {
+    font-weight: 700;
+    line-height: 1.875em;
+    letter-spacing: 0.06em;
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
+    width: 200px;
+    height: 50px;
+    padding: 10px 41px;
+  }
 
-}
+  &--modal {
+    width: 200px;
+    height: 50px;
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-top: 30px;
+  }
 
-&--modal-close {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  top: 8px;
-  right: 8px;
-  background-color: $button-text-color;
-  color: $main-text-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-}
-    
-  
-   &--newsletter {
+  &--modal-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    top: 8px;
+    right: 8px;
+    background-color: $button-text-color;
+    color: $main-text-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  &--newsletter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,23 +76,22 @@
     width: 200px;
     height: 50px;
     padding: 0;
- gap: 0;
+    gap: 0;
     justify-content: space-around;
   }
 
-   .button--modal {
-  width: 200px;
-  height: 50px;
-  color: $button-text-color;
-  background-color: $button-backgroundnhover-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
-  margin-left: 164px;
-  margin-right: 164px;
-  margin-bottom: 40px;
-   }
+  .button--modal {
+    width: 200px;
+    height: 50px;
+    color: $button-text-color;
+    background-color: $button-backgroundnhover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    margin-left: 164px;
+    margin-right: 164px;
+    margin-bottom: 40px;
+  }
 }
-
 
 // @media screen and (min-width: 1200px) {
 //   .button {
@@ -114,7 +109,6 @@
 //   }
 //   }
 // }
-
 
 // .button {
 //   text-align: center;

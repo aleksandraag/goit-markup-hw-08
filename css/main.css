@@ -476,8 +476,8 @@ img {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: auto;
   margin-top: 30px;
-  margin: 30px 125px 40px;
 }
 .button--modal-close {
   position: absolute;
@@ -1105,6 +1105,7 @@ img {
     margin: 0 auto;
   }
   .clients__item {
+    width: 170px;
     max-width: 100%;
     margin: 0 auto;
     -webkit-box-flex: 0;
@@ -1265,7 +1266,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 528px;
+  max-width: 450px;
   width: 100%;
 }
 .modal__header {
@@ -1348,17 +1349,14 @@ img {
 
 .checkbox {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 40px;
   margin-bottom: 0;
+  max-width: 450px;
+  width: 100%;
   color: #757575;
 }
 .checkbox__icon {
@@ -1386,11 +1384,19 @@ input:checked + .checkbox__icon {
   font-size: 12px;
   line-height: 1.5em;
   letter-spacing: 0.03em;
-  white-space: nowrap;
+  margin: 0 auto;
+  width: 100%;
 }
 .checkbox__terms--link {
   color: #2196f3;
   text-decoration: underline;
+}
+.checkbox__terms__icon {
+  position: absolute;
+  fill: white;
+  top: 10%;
+  right: 97%;
+  border: 1px solid #212121;
 }
 
 @media screen and (min-width: 1200px) {
