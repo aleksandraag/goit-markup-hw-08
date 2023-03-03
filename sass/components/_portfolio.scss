@@ -10,7 +10,8 @@
   justify-content: center;
   gap: 8px;
   padding: 0;
-  margin-bottom: 50px;
+  margin-top: 36px;
+  margin-bottom: 30px;
 }
 
 .grid {
@@ -20,11 +21,11 @@
   align-items: center;
   gap: 30px;
   margin: 0 auto;
+  margin-bottom: 60px;
 
   &__item {
     margin: 0 auto;
     padding: 0%;
-    flex-basis: calc((100% - 60px) / 3);
   }
 
   &__category {
@@ -98,5 +99,30 @@
     padding: 0%;
     position: relative;
     z-index: 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid__item {
+    flex-basis: calc((100% - 60px) / 2);
+    max-width: 354px;
+  }
+
+  .categories {
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .grid__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    .categories {
+      margin-top: 0;
+    }
   }
 }
